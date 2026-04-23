@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Cosmos Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="space-bg" id="bg"></div>
+
+    <div class="glass-panel">
+        <div class="header">
+            <h1 id="time">00:00:00</h1>
+            <p>SAYYORA MONITORINGI</p>
+        </div>
+
+        <div class="planet-display">
+            <div class="planet-circle" id="planet"></div>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card" onclick="changePlanet('Mars', '#ff4d4d', '24.6 soat')">
+                <span>MARS</span>
+                <small>Qizil sayyora</small>
+            </div>
+            <div class="stat-card" onclick="changePlanet('Yupiter', '#ffcc00', '9.9 soat')">
+                <span>YUPITER</span>
+                <small>Gigan sayyora</small>
+            </div>
+            <div class="stat-card" onclick="changePlanet('Saturn', '#00d4ff', '10.7 soat')">
+                <span>SATURN</span>
+                <small>Xalqali sayyora</small>
+            </div>
+        </div>
+
+        <div class="info-box">
+            <h2 id="planet-name">Sayyorani tanlang</h2>
+            <p id="planet-desc">Koinot sirlarini o'rganish vaqti keldi.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+
+<div class="glass-panel">
+    <div class="header">
+        <h1 id="time">00:00:00</h1>
+        <p>KOSMIK MONITORING</p>
+    </div>
+
+    <div class="planet-viewport">
+        <div class="planet-sphere" id="planet">
+            <div class="texture"></div>
+        </div>
+    </div>
+
+    <div class="info-box">
+        <h2 id="planet-name">Yerni tanlang</h2>
+        <p id="planet-desc">Monitoring tizimi tayyor.</p>
+    </div>
+
+    <div class="planet-selector">
+        <button onclick="updatePlanet('Mercury', '#A5A5A5', '88 kun')">Mercuriy</button>
+        <button onclick="updatePlanet('Venus', '#E3BB76', '225 kun')">Venera</button>
+        <button onclick="updatePlanet('Earth', '#2271B3', '365 kun')">Yer</button>
+        <button onclick="updatePlanet('Mars', '#E27B58', '687 kun')">Mars</button>
+        <button onclick="updatePlanet('Jupiter', '#D39C7E', '12 yil')">Yupiter</button>
+        <button onclick="updatePlanet('Saturn', '#C5AB6E', '29 yil')">Saturn</button>
+        <button onclick="updatePlanet('Uranus', '#BBE1E4', '84 yil')">Uran</button>
+        <button onclick="updatePlanet('Neptune', '#6081FF', '165 yil')">Neptun</button>
+    </div>
+</div>
+</body>
+</html>
