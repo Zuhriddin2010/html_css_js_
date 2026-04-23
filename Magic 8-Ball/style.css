@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle, #1a0033 0%, #05000a 100%);
+    font-family: 'Segoe UI', sans-serif;
+    color: #fff;
+    overflow: hidden;
+}
+
+.game-container { text-align: center; }
+
+h1 {
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, #bc4e9c, #f80759);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.eight-ball {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle at 30% 30%, #333 0%, #000 100%);
+    border-radius: 50%;
+    margin: 40px auto;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset -10px -10px 50px rgba(0,0,0,1), 0 20px 50px rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+/* Sharning nurlanishi */
+.outer-glow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 40px rgba(188, 78, 156, 0.3);
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 20px rgba(188, 78, 156, 0.3); }
+    50% { box-shadow: 0 0 60px rgba(188, 78, 156, 0.6); }
+    100% { box-shadow: 0 0 20px rgba(188, 78, 156, 0.3); }
+}
+
+.inner-circle {
+    width: 120px;
+    height: 120px;
+    background: #111;
+    border-radius: 50%;
+    border: 8px solid #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: inset 0 0 20px #000;
+}
+
+.answer {
+    font-size: 1rem;
+    text-align: center;
+    padding: 10px;
+    color: #4facfe;
+    text-shadow: 0 0 10px #4facfe;
+    font-weight: bold;
+    transition: 0.5s;
+}
+
+/* Shalkillash animatsiyasi */
+.shake {
+    animation: shakeAnim 0.5s ease-in-out;
+}
+
+@keyframes shakeAnim {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-15px) rotate(-10deg); }
+    40% { transform: translateX(15px) rotate(10deg); }
+    60% { transform: translateX(-10px) rotate(-5deg); }
+    80% { transform: translateX(10px) rotate(5deg); }
+}
+
+.input-area input {
+    background: rgba(255,255,255,0.05);
+    border: 2px solid rgba(188, 78, 156, 0.4);
+    padding: 15px 25px;
+    border-radius: 30px;
+    color: white;
+    width: 300px;
+    outline: none;
+    font-size: 1rem;
+    text-align: center;
+}
