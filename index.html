@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loyihalar Progressi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Loyihalar Progressi</h2>
+        
+        <div class="overall-card">
+            <span>Umumiy bajarilish:</span>
+            <div class="main-progress-bg">
+                <div id="mainProgressBar" class="main-progress-fill"></div>
+            </div>
+            <strong id="averagePercent">0%</strong>
+        </div>
+
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="Yangi vazifa nomi...">
+            <button onclick="addTask()" id="addBtn">Qo'shish</button>
+        </div>
+
+        <ul id="taskList">
+            </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
