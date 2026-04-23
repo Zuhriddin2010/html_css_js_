@@ -58,4 +58,4 @@ function updateGlobalProgress() {
 // Enter tugmasi
 document.getElementById('taskInput').addEventListener('keypress', (e) => {
     if (e.key === 'Enter') addTask();
-});
+}); 
