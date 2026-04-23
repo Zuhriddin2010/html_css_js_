@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ob-havo Ilovasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="weather-card">
+        <div class="search">
+            <input type="text" id="cityInput" placeholder="Shahar nomini kiriting..." spellcheck="false">
+            <button onclick="getWeather()">🔍</button>
+        </div>
+
+        <div class="weather-info" id="weatherInfo">
+            <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" class="weather-icon" alt="sun">
+            <h1 class="temp">25°C</h1>
+            <h2 class="city">Toshkent</h2>
+            
+            <div class="details">
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1582/1582885.png" alt="humidity">
+                    <div>
+                        <p class="humidity">45%</p>
+                        <p>Namlik</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <img src="https://cdn-icons-png.flaticon.com/512/483/483575.png" alt="wind">
+                    <div>
+                        <p class="wind">5 km/soat</p>
+                        <p>Shamol</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
