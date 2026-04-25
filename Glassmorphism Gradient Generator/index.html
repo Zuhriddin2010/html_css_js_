@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>Ranglar Laboratoriyasi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ranglar Laboratoriyasi</h1>
+        
+        <div class="main-layout">
+            <div class="preview-box" id="previewCard">
+                <div class="glass-object">
+                    <p>Live Preview</p>
+                </div>
+            </div>
+
+            <div class="controls">
+                <div class="control-group">
+                    <label>Asosiy Rang 1</label>
+                    <input type="color" id="color1" value="#4facfe" oninput="updateUI()">
+                </div>
+                <div class="control-group">
+                    <label>Asosiy Rang 2</label>
+                    <input type="color" id="color2" value="#00f2fe" oninput="updateUI()">
+                </div>
+                <div class="control-group">
+                    <label>Xiralik (Blur): <span id="blurVal">15px</span></label>
+                    <input type="range" id="blur" min="0" max="40" value="15" oninput="updateUI()">
+                </div>
+                
+                <div class="code-box">
+                    <code id="cssCode">background: linear-gradient(...);</code>
+                    <button onclick="copyCode()">Nusxa olish</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

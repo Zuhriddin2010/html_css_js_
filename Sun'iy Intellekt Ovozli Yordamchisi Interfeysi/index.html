@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <title>AI Ovozli Yordamchi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main-container">
+        <div class="ai-box">
+            <h1 class="ai-title">AI Yordamchi</h1>
+            <div class="status-indicator" id="status">Tayyor</div>
+            <p class="ai-response" id="responseText">Assalomu alaykum! Men sizni eshitishga tayyorman. Tugmani bosing va gapiring.</p>
+        </div>
+
+        <div class="wave-container">
+            <canvas id="waveCanvas"></canvas>
+        </div>
+
+        <button class="mic-btn" id="micBtn" onclick="startListening()">
+            <span class="icon">🎤</span>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
